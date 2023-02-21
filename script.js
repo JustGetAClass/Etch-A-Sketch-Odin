@@ -46,6 +46,8 @@ function colorDiv(){
     let randomColor = Math.floor(Math.random()*16777215).toString(16);
     if (color === "random"){
         this.style.backgroundColor = '#' + randomColor;
+    } else if(color === "white"){
+        this.style.backgroundColor = 'white';
     } else{
         this.style.backgroundColor = 'black';
     }

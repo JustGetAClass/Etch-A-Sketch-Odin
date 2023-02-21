@@ -90,6 +90,13 @@ body{
         }
     }
 
+    #eraser{
+        @include button-structure(#F9F54B, #205E61);
+        &:hover{
+            background-color: #fdfca0;
+        }
+    }
+
     #reset{
         @include button-structure(#E4F9F5, black);
         &:hover{

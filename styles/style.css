@@ -99,6 +99,21 @@ body {
 .footer #random:hover {
   background-color: #fa7aa1;
 }
+.footer #eraser {
+  font-family: "Press Start 2P", cursive;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #F9F54B;
+  color: #205E61;
+  transition: background-color 200ms ease-in-out;
+}
+.footer #eraser:hover {
+  background-color: #fdfca0;
+}
 .footer #reset {
   font-family: "Press Start 2P", cursive;
   width: 100px;
