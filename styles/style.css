@@ -35,15 +35,23 @@ body {
   background-color: #00ADB5;
   color: #fff;
 }
+.header #popup:hover {
+  background-color: black;
+}
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 530px;
-  height: 530px;
+  gap: 2px;
+  width: 540px;
+  height: 540px;
   border-radius: 5px;
   background-color: #FFDE7D;
+}
+.container p {
+  color: red;
 }
 .container .board {
   width: 500px;
@@ -71,6 +79,9 @@ body {
   background-color: #112D4E;
   color: #F9F7F7;
 }
+.footer #black:hover {
+  background-color: #3167a5;
+}
 .footer #random {
   font-family: "Press Start 2P", cursive;
   width: 100px;
@@ -82,6 +93,9 @@ body {
   background-color: #FC5185;
   color: #F5F5F5;
 }
+.footer #random:hover {
+  background-color: #fa7aa1;
+}
 .footer #reset {
   font-family: "Press Start 2P", cursive;
   width: 100px;
@@ -92,4 +106,11 @@ body {
   cursor: pointer;
   background-color: #E4F9F5;
   color: black;
+}
+.footer #reset:hover {
+  background-color: #bbcac8;
+}
+
+#copyright {
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */

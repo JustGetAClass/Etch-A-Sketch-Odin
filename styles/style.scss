@@ -8,7 +8,6 @@
     cursor: pointer;
     background-color: $bc;
     color: $c;
-
 }
 
 body{
@@ -39,17 +38,26 @@ body{
     align-items: center;
     #popup{
         @include button-structure(#00ADB5, #fff);
+        &:hover{
+            background-color: black;
+        }
     }
 }
 
 .container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 530px;
-    height: 530px;
+    gap: 2px;
+    width: 540px;
+    height: 540px;
     border-radius: 5px;
     background-color: #FFDE7D;
+
+    p{
+        color: red;
+    }
 
     .board{
         width:500px;
@@ -69,14 +77,27 @@ body{
 
     #black{
         @include button-structure(#112D4E, #F9F7F7);
+        &:hover{
+            background-color: #3167a5;
+        }
     }
 
     #random{
         @include button-structure(#FC5185, #F5F5F5);
+        &:hover{
+            background-color: #fa7aa1;
+        }
     }
 
     #reset{
-        @include button-structure(#E4F9F5, black)
+        @include button-structure(#E4F9F5, black);
+        &:hover{
+            background-color: #bbcac8;
+        }
     }
 
+}
+
+#copyright{
+    padding: 10px;
 }
