@@ -4,37 +4,40 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/reset.css">
-        <link rel="stylesheet" href="styles/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles/reset.css" />
+		<link rel="stylesheet" href="styles/style.css" />
 		<title>Etch A Sketch</title>
 	</head>
 	<body>
-        <div class="title">
-            <h1>Etch A Sketch</h1>
-        </div>
+		<div class="title">
+			<h1>Etch A Sketch</h1>
+		</div>
 
-        <div class="header">
-            <h2>Select a Size</h2>
-            <button id="popup" class="btn">Select</button>
-        </div>
+		<div class="header">
+			<h2>Select a Size</h2>
+			<button id="popup" class="btn">Select</button>
+		</div>
 
-        <div class="container">
-            <p id="message"></p>
-            <div class="board"></div>
-        </div>
+		<div class="container">
+			<p id="message"></p>
+			<div class="board"></div>
+		</div>
 
-        <div class="footer">
-            <button id="black" class="btn" onclick="setColor('black')">Black</button>
-            <button id="random" class="btn" onclick="setColor('random')">Random</button>
-            <button id="eraser" onclick="setColor('white')">Eraser</button>
-            <button id="reset" class="btn" onclick="resetBoard()">Reset</button>
-        </div>
+		<div class="footer">
+			<button id="black" onclick="setColor('black')">Black</button>
+			<button id="random" onclick="setColor('random')">Random</button>
+			<button id="eraser" onclick="setColor('white')">Eraser</button>
+			<button id="reset" onclick="resetBoard()">Reset</button>
+		</div>
 
-        <h3 id="copyright">Copyright @2023 Mohamed Salat</h3>
+		<h3 id="copyright">Copyright @2023 Mohamed Salat</h3>
 
-        <script src="script.js"></script>
-    </body>
+		<script src="script.js"></script>
+	</body>
 </html>

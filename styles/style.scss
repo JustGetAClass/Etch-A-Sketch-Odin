@@ -1,111 +1,109 @@
-@mixin button-structure ($bc ,$c){
-    font-family: 'Press Start 2P', cursive;
-    width:100px;
-    height: 30px;
-    border-radius: 5px;
-    border: none;
-    margin: 5px;
-    cursor: pointer;
-    background-color: $bc;
-    color: $c;
-    transition: background-color 200ms ease-in-out  ;
+@mixin button-structure($bc, $c) {
+	font-family: "Press Start 2P", cursive;
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	border: none;
+	margin: 5px;
+	cursor: pointer;
+	background-color: $bc;
+	color: $c;
+	transition: background-color 200ms ease-in-out;
 }
 
-body{
-    background-color: #FF2E63;
-    font-family: 'Press Start 2P', cursive;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+body {
+	background-color: #ff2e63;
+	font-family: "Press Start 2P", cursive;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.title{
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h1{
-        font-size: 2.5rem;
-        color: #222831;
-    }
+.title {
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h1 {
+		font-size: 2.5rem;
+		color: #222831;
+	}
 }
 
-.header{
-    width: 500px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    #popup{
-        @include button-structure(#00ADB5, #fff);
-        &:hover{
-            background-color: black;
-        }
-    }
+.header {
+	width: 500px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	#popup {
+		@include button-structure(#00adb5, #fff);
+		&:hover {
+			background-color: black;
+		}
+	}
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
-    width: 540px;
-    height: 540px;
-    border-radius: 5px;
-    background-color: #FFDE7D;
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2px;
+	width: 540px;
+	height: 540px;
+	border-radius: 5px;
+	background-color: #ffde7d;
 
-    p{
-        color: red;
-    }
+	p {
+		color: red;
+	}
 
-    .board{
-        width:500px;
-        height:500px;
-        display: grid;
-        border: 1px solid black;
-        background-color: #ffffffff;
-    }
+	.board {
+		width: 500px;
+		height: 500px;
+		display: grid;
+		border: 1px solid black;
+		background-color: #ffffffff;
+	}
 }
 
-.footer{
-    width: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+.footer {
+	width: 600px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 
-    #black{
-        @include button-structure(#112D4E, #F9F7F7);
-        &:hover{
-            background-color: #3167a5;
-        }
-    }
+	#black {
+		@include button-structure(#112d4e, #f9f7f7);
+		&:hover {
+			background-color: #3167a5;
+		}
+	}
 
-    #random{
-        @include button-structure(#FC5185, #F5F5F5);
-        &:hover{
-            background-color: #fa7aa1;
-        }
-    }
+	#random {
+		@include button-structure(#fc5185, #f5f5f5);
+		&:hover {
+			background-color: #fa7aa1;
+		}
+	}
 
-    #eraser{
-        @include button-structure(#F9F54B, #205E61);
-        &:hover{
-            background-color: #fdfca0;
-        }
-    }
+	#eraser {
+		@include button-structure(#f9f54b, #205e61);
+		&:hover {
+			background-color: #fdfca0;
+		}
+	}
 
-    #reset{
-        @include button-structure(#E4F9F5, black);
-        &:hover{
-            background-color: #bbcac8;
-        }
-    }
-
+	#reset {
+		@include button-structure(#e4f9f5, black);
+		&:hover {
+			background-color: #bbcac8;
+		}
+	}
 }
 
-#copyright{
-    padding: 10px;
+#copyright {
+	padding: 10px;
 }
