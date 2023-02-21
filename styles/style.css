@@ -1,4 +1,5 @@
 body {
+  background-color: #FF2E63;
   font-family: "Press Start 2P", cursive;
   display: flex;
   flex-direction: column;
@@ -42,12 +43,15 @@ body {
   width: 530px;
   height: 530px;
   border: 1px solid black;
+  border-radius: 5px;
+  background-color: #FFDE7D;
 }
 .container .board {
   width: 500px;
   height: 500px;
   display: grid;
   border: 1px solid black;
+  background-color: white;
 }
 
 .footer {
