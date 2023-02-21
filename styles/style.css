@@ -34,6 +34,7 @@ body {
   cursor: pointer;
   background-color: #00ADB5;
   color: #fff;
+  transition: background-color 200ms ease-in-out;
 }
 .header #popup:hover {
   background-color: black;
@@ -78,6 +79,7 @@ body {
   cursor: pointer;
   background-color: #112D4E;
   color: #F9F7F7;
+  transition: background-color 200ms ease-in-out;
 }
 .footer #black:hover {
   background-color: #3167a5;
@@ -92,6 +94,7 @@ body {
   cursor: pointer;
   background-color: #FC5185;
   color: #F5F5F5;
+  transition: background-color 200ms ease-in-out;
 }
 .footer #random:hover {
   background-color: #fa7aa1;
@@ -106,6 +109,7 @@ body {
   cursor: pointer;
   background-color: #E4F9F5;
   color: black;
+  transition: background-color 200ms ease-in-out;
 }
 .footer #reset:hover {
   background-color: #bbcac8;
