@@ -4,9 +4,28 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/style.css">
+		<title>Etch A Sketch</title>
 	</head>
 	<body>
-        
+        <h1>Etch A Sketch</h1>
+        <div class="header">
+            <h2>Select the size</h2>
+            <button id="popup" class="btn">Select</button>
+        </div>
+        <div class="container">
+            <div class="board"></div>
+
+            <div class="footer">
+                <button class="btn">Black</button>
+                <button class="btn">Random</button>
+                <button class="btn">Reset</button>
+            </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
