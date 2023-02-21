@@ -33,7 +33,7 @@ body {
   margin: 5px;
   cursor: pointer;
   background-color: #00ADB5;
-  color: #222831;
+  color: #fff;
 }
 
 .container {
@@ -42,7 +42,6 @@ body {
   align-items: center;
   width: 530px;
   height: 530px;
-  border: 1px solid black;
   border-radius: 5px;
   background-color: #FFDE7D;
 }
