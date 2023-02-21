@@ -1,0 +1,79 @@
+@mixin button-structure ($bc ,$c){
+    font-family: 'Press Start 2P', cursive;
+    width:100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    background-color: $bc;
+    color: $c;
+
+}
+
+body{
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 2.5rem;
+        color: #222831;
+    }
+}
+
+.header{
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    #popup{
+        @include button-structure(#00ADB5, #222831);
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 530px;
+    height: 530px;
+    border: 1px solid black;
+
+    .board{
+        width:500px;
+        height:500px;
+        display: grid;
+        border: 1px solid black;
+    }
+}
+
+.footer{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    #black{
+        @include button-structure(#112D4E, #F9F7F7);
+    }
+
+    #random{
+        @include button-structure(#FC5185, #F5F5F5);
+    }
+
+    #reset{
+        @include button-structure(#E4F9F5, black)
+    }
+
+}
